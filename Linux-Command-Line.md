@@ -85,9 +85,57 @@
   * A shell function
   * An alias
   * `type`
+    * Check the command's type
   * `which`
+    * Located a program file in the user's path
 
 ***
+
+## Navigation
+
+* Directories
+  * Root directory: `/`
+  * Users (Home) directory: `~` or `/users` or `/home`
+  * Binaries directory: `/bin`
+    * Contains executable programs
+  * `/etc`
+    * Contains configuration files and initialisation scripts
+  * `/var`
+    * Contains files related to logging
+  * `/usr`
+    * Contains files related to user installation
+* `pwd`
+  * Print working directory name
+* `ls`
+  * List directory contents
+  * Common options
+    * `-l`: prints in long list formats
+    * `-a`: lists any hidden files that begin with `.`
+* `cd <directory>`
+  * Change directory
+  * Current directory: `.`
+  * Parent directory: `..`
+  * Relative and absolute path
+
+***
+
+## Creating Files & Folders
+
+* `touch <filename>`
+  * Change file access and modification times; if any file doesn't exist, it is created with default permissions
+* `file <filename>`
+  * Determine file type
+  * OS doesn't't use the file extension to decide on the file type.
+  * File extension decides which application to be used to open the file
+* `mkdir <folderName>`
+  * Make directories
+  * Common options
+    * `-p`: create intermediate deirectories as required
+* 
+
+***
+
+
 
 ## References
 
