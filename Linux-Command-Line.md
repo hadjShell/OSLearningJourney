@@ -28,4 +28,69 @@
   * Originally, terminals were physical devices
 * Bash
   * On most Linux-based systems, the default shell program is `bash`
-  * 
+
+***
+
+## Basics
+
+* Command Structure
+
+  * ```bash
+    command -options arguments
+    ```
+
+  * Most commands support multiple options that modify their behaviours
+
+  * Options can be combined with single `-`
+
+  * Long-form options
+
+    * Some options support equivalent long-form options that are usually two words and prefixed with two dashes instead of just one
+    * Long term options cannot be combined
+
+  * Arguments are the values we provide to commands
+
+  * Options that require arguments can omit the space between option and argument
+
+  * **Case matters!**
+
+  * `date`
+
+  * `ncal`
+
+  * `cal`
+
+* Man Page
+
+  * `man <command>`
+  * Man page is displayed using `Less`
+  * Man page synopsis
+    * Anything listed inside of square brackets `[]` is OPTOINAL
+  * Manual sections
+    1. User Commands
+    2. System Calls
+    3. C Library Functions
+    4. Special Files
+    5. File Forms
+    6. Games
+    7. Miscellaneous
+    8. System Admin Commands
+
+* Type of commands
+
+  * An executable program
+    * Usually stored in `/bin`, `/usr/bin`, `/usr/local/bin`
+    * These are compiled binary files
+  * A built-in shell command
+  * A shell function
+  * An alias
+  * `type`
+  * `which`
+
+***
+
+## References
+
+* [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
+* [Operating System Family Tree](https://eylenburg.github.io/os_familytree.htm)
+* 
