@@ -162,6 +162,24 @@
   * Common options
     * `-r`: copy directories recursively
 
+***
+
+## Shortcuts
+
+* `^L`: clear
+* `^A`: move the cursor to the beginning of the line
+* `^E`: move the cursor to the end of the line
+* `option ->`: move the cursor forward one word
+* `option <-`: move the cursor backward one word
+* `^T`: swap character with its previous
+* `^K`: kill the text from the current cursor location to the end of the line
+* `^U`: kill the text from the current cursor location to the beginning of the line
+* `option D`: kill the text from the current cursor location throught the end of the word
+* `^Y`: retrieve the most recently killed text
+* `history`: view the recorded commands stored in `~/.bash_history`
+  * `!<number>`: re-run the No.number command in the history
+  * `^R`: search commands with the best matches
+
 ## References
 
 * [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
