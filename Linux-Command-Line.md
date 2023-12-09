@@ -145,7 +145,22 @@
 
 ## Deleting, Copying & Moving
 
-
+* `rm <fileName>`
+  * Remove files or directories
+  * `rm` **DELETE** files, there is no undo or recycle bin to retrieve them from
+  * Common options
+    * `-d`: remove empty directories
+    * `-r`: remove directories and their contents recursively
+    * `-i`: prompt before every removal
+    * `-f`: never prompt
+* `mv <source> <destination>`
+  * Move files
+* `mv <source> <target>`
+  * Rename the file or directory if the last argument does not name an existing directory
+* `cp <source> <destination>`
+  * Copy files
+  * Common options
+    * `-r`: copy directories recursively
 
 ## References
 
