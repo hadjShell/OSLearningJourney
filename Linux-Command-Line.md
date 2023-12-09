@@ -131,9 +131,19 @@
   * Make directories
   * Common options
     * `-p`: create intermediate deirectories as required
-* 
 
 ***
+
+## Nano
+
+* Nano is a simple text editor that we can access right from terminal
+* Some others: vim, emacs, etc.
+* `nano <fileName>`
+  * Use shortcuts to perform tasks
+
+***
+
+## Deleting, Copying & Moving
 
 
 
