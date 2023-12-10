@@ -180,6 +180,41 @@
   * `!<number>`: re-run the No.number command in the history
   * `^R`: search commands with the best matches
 
+***
+
+## Working with Files
+
+* `cat [fileName ...]`
+  * Concatenate and print files
+* `less [fileName]`
+  * Display the content of a file one page at a time. Navigate forward and backward is feasible
+* `tac [fileName ...]`
+  * Concatenate and print files in "vertical" reverse
+* `rev [fileName ...]`
+  * Reverse lines of a file (horizontally)
+* `head [fileName ...]` `tail [fileName ...]`
+  * Display first / last lines of files
+  * Common options
+    * `-n count`: print `count` lines
+      * Or just `-count`
+    * `-c bytes`: print `bytes` bytes
+    * `tail -f`
+      * Causes tail to not stop when end of file is reached, but rather to wait for additional data to be appended to the input
+      * Useful for logs
+* `wc [fileName ...]`
+  * Line, word, character, byte count
+  * `-l`, `-w`, `-c`
+* `sort [fileName ...]`
+  * Print sorted content of a file (doesn't change the file)
+  * Common options
+    * `-r`: in reverse order
+    * `-n`: sort numerically
+    * `-u`: unique only
+
+***
+
+
+
 ## References
 
 * [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
