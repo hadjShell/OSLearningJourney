@@ -230,6 +230,28 @@
   * The input information could come from a keyboard, a file, or from another command
 * Redirection
   * Redirection describes the ways we can alter the source of standard input, and the destinations of standard output and standard error
+  * Redirect stdout
+    * `command > filename`
+      * Overwrite
+    * `command >> filename`
+      * Append
+  * Redirect stdin
+    * `command < filename`
+  * Redirect stderr
+    * `wrong_command 2> filename`
+    * `wrong_command 2>> filename`
+
+***
+
+## Piping
+
+* Pipes are used to redirect a stream from one program to another program
+* `command1 | command2`
+  * The stdout of the first command will be passed to the stdin of the second command
+* `command1 | tee file.txt | command2`
+  * `tee` reads stdin and copies it both to stdout and to a file
+
+***
 
 ## References
 
