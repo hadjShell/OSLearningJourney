@@ -213,7 +213,23 @@
 
 ***
 
+## Redirection
 
+* Standard streams
+  * The three standard streams are communication channels between a computer program and its environment
+* Standard output
+  * Standard output is a place to which a program or command can send information
+  * The information could go to a screen to be displayed; to a file; or even to a printer or other devices
+  * By default it goes to the terminal window
+* Standard error
+  * Commands and programs also have a destination to send error messages
+  * By default, the shell directs the error message to the screen
+* Standard input
+  * Standard input is where a program or a command gets its input information from
+  * By default, the shell directs standard input from the keyboard
+  * The input information could come from a keyboard, a file, or from another command
+* Redirection
+  * Redirection describes the ways we can alter the source of standard input, and the destinations of standard output and standard error
 
 ## References
 
