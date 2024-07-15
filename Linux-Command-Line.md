@@ -253,6 +253,33 @@
 
 ***
 
+## Expansion
+
+*  `*`
+  * Represents 0 or more characters in a filename
+* `?`
+  * Represents a single character
+* `[]`
+  * Specify a range of characters to match
+  * Range: `[0-9]`
+* `[^]`
+  * Complement range
+* `~`
+* `{}`
+  * Generate arbitrary strings
+  * Range: `{a..c}`
+  * Change interval: `{2..10..2}`
+* `$((expression))`
+  * Arithmetic expansion
+* `$(command)`
+  * Display the output of another command
+* `""`
+  * If we wrap text in double quotes, the shell will respect our spacing and will ignore special character except for `$`, `\`, `backtick`
+* `''`
+  * Suppress all forms of substitution
+
+***
+
 ## References
 
 * [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
