@@ -134,15 +134,6 @@
 
 ***
 
-## Nano
-
-* Nano is a simple text editor that we can access right from terminal
-* Some others: vim, emacs, etc.
-* `nano <fileName>`
-  * Use shortcuts to perform tasks
-
-***
-
 ## Deleting, Copying & Moving
 
 * `rm <fileName>`
@@ -161,6 +152,46 @@
   * Copy files
   * Common options
     * `-r`: copy directories recursively
+
+***
+
+## Searching
+
+* `locate`
+  * Search pathnames across the machine that match a given substring and then prints out any matching names
+  * Use a pre-generated database file
+    * `sudo updatedb`
+      * Update database manually
+  * `-e`
+    * Print entries that actually exist at the time `locate` is running
+  * `-i`
+    * Ignore case
+  * `-l`
+    * Limit the number of entries
+* `find`
+  * By default, it lists every single file and directory nested in the current directory
+  * Or provide a specific folder
+  * Doesn't use a database file
+  * `-type f`
+    * Only looks for files
+  * `-type d`
+    * Only looks for directories
+  * `-name "*.txt"`
+    * Find by a pattern
+    * `-iname`
+      * Ignore case
+  * `-size +2G`
+    * Find by size
+  * `-user david`
+    * Find by user
+  * `-empty`
+  * `-mmin`, `-cmin`, `-amin`, `-mtime`, `-ctime`, `-atime`, `-newer`, `-cnewer`, `-anewer`
+    * Find by last modification time, last changed time, recent access time
+  * `-and`, `-or`, `-not`
+  * `find -exec command '{}' ';'`
+    * Perform actions on each matching pathname
+    * `{}` are a placeholder for the current pathname (each match)
+    * `;` indicate the end of the command
 
 ***
 
@@ -213,6 +244,15 @@
 
 ***
 
+## Nano
+
+* Nano is a simple text editor that we can access right from terminal
+* Some others: vim, emacs, etc.
+* `nano <fileName>`
+  * Use shortcuts to perform tasks
+
+***
+
 ## Redirection
 
 * Standard streams
@@ -250,6 +290,8 @@
   * The stdout of the first command will be passed to the stdin of the second command
 * `command1 | tee file.txt | command2`
   * `tee` reads stdin and copies it both to stdout and to a file
+* `xargs`
+  * Takes stdin into a bundle that will be provide as an argument list to the next command
 
 ***
 
