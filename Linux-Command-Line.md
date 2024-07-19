@@ -343,6 +343,41 @@
 
 ***
 
+## Permission
+
+* Unix and Unix-like systems are multi-user systems
+* A single user may be the owner of files and directories, meaning that he has control over their access
+* Users can belong to groups which are given access to particular files and folders by their owners
+* File attributes
+  * 10 characters
+  * Type of the file + read, write, execute permissions for the file owner + for the group owner + for everyone else
+  * Type of the file
+    * `-` regular file
+    * `d` directory
+    * `l` symbolic link
+    * `c` character devices
+    * `b` block devices
+* `chmod mode file`
+  * Change the permissions of a file or a directory
+  * Symbolic notation
+    * `[ugoa][+-=][rwx]`
+      * `=` set a permission and remove others
+  * Octal notation
+    * `[0-7][0-7][0-7]`
+* `su - username`
+  * Substitute user a new login session
+  * Type `exit` to leave the session
+* `sudo command`
+  * Execute a command as the root user
+* `chown USER[:GROUP] FILE(s)`
+  * Change the owner and/or the group owner of a file or directory
+* `groups USER`
+  * Check user's group
+* `addgroup GROUPNAME`
+* `adduser USER GROUP`
+
+***
+
 ## References
 
 * [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
