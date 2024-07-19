@@ -195,6 +195,27 @@
 
 ***
 
+## `grep`
+
+* `grep PATTERN FILE` 
+  * Search for patternin each files's content, print each line that matches a pattern
+  * Support regex
+  * `-i`
+    * Ignore case
+  * `-w`
+    * Word search
+  * `-r`
+    * Recursive search which includes all files under a directory
+    * If we don't specify a directory, it will search current working directory
+  * `-c`
+    * Count the matches
+  * `-A2`, `-B2`, `C2`
+    * Print lines after or before or both the match lines
+  * `-n`
+    * Line number
+
+***
+
 ## Shortcuts
 
 * `^L`: clear
