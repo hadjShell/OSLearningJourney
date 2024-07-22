@@ -418,6 +418,19 @@
 
 ***
 
+## Bash Scripts
+
+* Basic steps
+  * Write a script in a file and save it
+  * Make the script executable using `chmod`
+  * Verify that shell can find your script
+* The first line of our script should read `#!PATH`
+  * Tell the OS which interpreter it should use when parsing this file
+* `PATH` variable
+  * When we run a command, the shell starts looking for the executable program in the list of directories stored in the `PATH` variable
+
+***
+
 
 
 ## References
