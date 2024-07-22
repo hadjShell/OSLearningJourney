@@ -378,6 +378,48 @@
 
 ***
 
+## Environment
+
+* The shell maintains a set of information during a shell session, known as the environment
+* A series of key-value pairs
+  * Your home directory
+  * Your working directory
+  * The name of your shell
+  * The name of the logged in user
+  * Etc.
+* `printenv`
+* `$ENV_VAR`
+  * Parameter expansion
+* `var=value`
+  * Define custom shell variables
+  * Only accessible in current shell session
+  * Good to use lower case
+* `export var=value`
+  * Define custom environment variables
+  * Accessible in child processes, lost in a new terminal window
+* `bash`
+  * Start a new session
+* Start-up files
+  * When we log in, the sehll reads information from startup files
+  * First, the shell reads from global config files that effect the environment for all users
+  * Then, the shell reads startup files for specific users
+    * For login session
+      * `/etc/profile` global config for all users
+      * `~/.bash_profile` user's personal config
+      * `~/.bash_login` read if previous file is not found
+      * `~/.profile` read if previous twp are not found
+    * For non-login session (a new terminal window)
+      * `/etc/bash.bashrc` global config
+      * `~/.bashrc` specific config for each user (where we can define our own configs)
+* Alias
+  * Define our own commands
+  * `alias ll="ls -l"`
+  * Can be stored in a separate file `~/.bash_aliases`
+
+***
+
+
+
 ## References
 
 * [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
