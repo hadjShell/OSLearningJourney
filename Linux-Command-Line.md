@@ -431,10 +431,8 @@
 
 ***
 
-
-
 ## References
 
 * [Article on Unix History](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix)
 * [Operating System Family Tree](https://eylenburg.github.io/os_familytree.htm)
-* 
+
